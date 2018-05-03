@@ -1,7 +1,7 @@
 git init
-git config user.name "Max Dmitriev"
+git config user.name "Ivan Ivanov"
 git config user.name
-git config user.email "max.dmitriev@6point6.co.uk"
+git config user.email "ivan.ivanov@example.com"
 git config user.email
 git status
 git add .
