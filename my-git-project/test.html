@@ -3,12 +3,12 @@ git config user.name "Ivan Ivanov"
 git config user.name
 git config user.email "ivan.ivanov@example.com"
 git config user.email
+git remote add origin https://github.com/maxdmitriev/hello-world.git
+git remote -v
+git fetch
+git checkout master
+
 git status
 git add .
 git commit -m "First commit"
-git remote add origin https://github.com/maxdmitriev/hello-world.git
-git remote -v
-git pull origin master
-git pull origin master --allow-unrelated-histories
-git commit -m "Merge commit"
 git push -u origin master
