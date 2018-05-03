@@ -1,0 +1,14 @@
+git init
+git config user.name "Max Dmitriev"
+git config user.name
+git config user.email "max.dmitriev@6point6.co.uk"
+git config user.email
+git status
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/maxdmitriev/hello-world.git
+git remote -v
+git pull origin master
+git pull origin master --allow-unrelated-histories
+git commit -m "Merge commit"
+git push -u origin master
