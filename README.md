@@ -1,7 +1,7 @@
 # Enable Server Side Includes (SSI) in your local copy
 
 
-### MAMP > Preferences > Web-Server
+### 1. MAMP > Preferences > Web-Server
 
 **Web Server:** Apache
 
@@ -9,7 +9,7 @@
 
 
 
-### /Applications/MAMP/conf/apache/httpd.conf
+### 2. /Applications/MAMP/conf/apache/httpd.conf
 
 ##### Uncomment following lines
 ```
@@ -21,7 +21,7 @@
     AddOutputFilter INCLUDES .shtml .html .htm .inc
 ```    
     
-### Add following lines into *.htaccess* in your local directory
+### 3. Add following lines into *.htaccess* in your local directory
 
 ```
 AddType text/html .shtml
@@ -33,7 +33,7 @@ Options Indexes FollowSymLinks Includes
 
 ```
 
-### _SSI looks like:_
+#### _SSI looks like:_
 
 ```html
 <!--#include virtual="/path-to-your/file.inc"-->
