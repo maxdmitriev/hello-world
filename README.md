@@ -3,9 +3,9 @@
 
 ### MAMP > Preferences > Web-Server
 
-*Web Server:* Apache
+**Web Server:** Apache
 
-*Document Root:* _username_ > _Sites_ > _yoursite_
+**Document Root:** _username_ > _Sites_ > _yoursite_
 
 
 
