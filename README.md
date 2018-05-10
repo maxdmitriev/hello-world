@@ -16,7 +16,7 @@ Document Root: _username_ > _Sites_ > _yoursite_
     #AddType text/html .shtml
     #AddOutputFilter INCLUDES .shtml
 ```
-#### Enable extensions
+##### Enable more extensions
 ```
     AddOutputFilter INCLUDES .shtml .html .htm .inc
 ```    
