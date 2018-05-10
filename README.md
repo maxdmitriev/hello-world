@@ -1,9 +1,3 @@
-# hello-world
-Hi humans!
-Max
-
-
-
 # Enable Server Side Includes (SSI) in your local copy
 
 
