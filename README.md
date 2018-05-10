@@ -3,15 +3,15 @@
 
 ### MAMP > Preferences > Web-Server
 
-Web Server: Apache
+*Web Server:* Apache
 
-Document Root: _username_ > _Sites_ > _yoursite_
+*Document Root:* _username_ > _Sites_ > _yoursite_
 
 
 
 ### /Applications/MAMP/conf/apache/httpd.conf
 
-#### Uncomment following lines
+##### Uncomment following lines
 ```
     #AddType text/html .shtml
     #AddOutputFilter INCLUDES .shtml
