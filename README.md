@@ -33,7 +33,7 @@ Options Indexes FollowSymLinks Includes
 
 ```
 
-#### _SSI looks like:_
+### _SSI looks like:_
 
 ```html
 <!--#include virtual="/path-to-your/file.inc"-->
