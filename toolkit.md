@@ -8,9 +8,7 @@ __npm is distributed with Node.js- which means that when you download Node.js, y
 ### csscomb
 http://csscomb.com
 
-csscomb configuration file
-
-to be placed into: 
+csscomb configuration file to be placed into: 
 ```
 /Users/myusername/.csscomb.json
 ```
