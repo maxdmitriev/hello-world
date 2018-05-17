@@ -12,6 +12,20 @@ _npm is distributed with Node.js- which means that when you download Node.js, yo
 /Users/username/.csscomb.json
 ```
 
+**Usage:**
+```
+csscomb css/style.css
+
+```
+
+
 
 ### [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+**Usage:**
+```
+autoprefixer-cli css/style.css
+
+autoprefixer-cli -h
+```
 
