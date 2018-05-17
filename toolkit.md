@@ -7,8 +7,7 @@ _npm is distributed with Node.js- which means that when you download Node.js, yo
 
 ### [CSScomb](http://csscomb.com)
 
-
-**[csscomb configuration file](https://github.com/maxdmitriev/hello-world/blob/master/_.csscomb.json)** to be placed into: 
+[.csscomb.json](https://github.com/maxdmitriev/hello-world/blob/master/_.csscomb.json) – configuration file, to be placed into: 
 ```
 /Users/myusername/.csscomb.json
 ```
