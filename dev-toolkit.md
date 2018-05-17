@@ -16,8 +16,7 @@ _npm is distributed with Node.js- which means that when you download Node.js, yo
 
 ~~autoprefixer-cli -h~~
 ```
-npx postcss --use autoprefixer -r --no-map our-work/css/our-work.css
-
+npx postcss --use autoprefixer -r --no-map our-work/css/style.css
 
 ```
 
