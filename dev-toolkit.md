@@ -8,7 +8,7 @@ _npm is distributed with Node.js- which means that when you download Node.js, yo
 
 
 ## Autoprefixer
-[Autoprefixer](https://github.com/postcss/autoprefixer) is the PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use. 
+[Autoprefixer](https://github.com/postcss/autoprefixer) is the PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from [Can I Use](https://caniuse.com). 
 
 ### Usage:
 
