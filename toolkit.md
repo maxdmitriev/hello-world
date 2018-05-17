@@ -3,7 +3,7 @@
 ### Node.js / npm
 https://nodejs.org/en/
 
-__npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer.__
+_npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer._
 
 ### csscomb
 http://csscomb.com
