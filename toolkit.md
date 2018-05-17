@@ -5,7 +5,7 @@
 
 _npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer._
 
-### [CSScomb](http://csscomb.com)
+### [CSScomb](http://csscomb.com) — The main feature is sorting properties in a specific order that can be easily [configurated](https://github.com/csscomb/csscomb.js/blob/dev/doc/options.md#sort-order-fallback)
 
 [.csscomb.json](https://github.com/maxdmitriev/hello-world/blob/master/_.csscomb.json) – configuration file, to be placed into: 
 ```
@@ -15,12 +15,11 @@ _npm is distributed with Node.js- which means that when you download Node.js, yo
 **Usage:**
 ```
 csscomb css/style.css
-
 ```
 
 
 
-### [Autoprefixer](https://github.com/postcss/autoprefixer)
+### [Autoprefixer](https://github.com/postcss/autoprefixer) — add vendor prefixes to rules
 
 **Usage:**
 ```
