@@ -17,7 +17,7 @@ autoprefixer-cli css/style.css
 autoprefixer-cli -h
 ```
 
-##CSScomb
+## CSScomb
 [CSScomb](http://csscomb.com) — sorting properties in a specific order that can be [configurated](https://github.com/csscomb/csscomb.js/blob/dev/doc/options.md#sort-order-fallback)
 
 [.csscomb.json](https://github.com/maxdmitriev/hello-world/blob/master/_.csscomb.json) – configuration file, to be placed into: 
