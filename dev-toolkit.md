@@ -12,7 +12,7 @@ _npm is distributed with Node.js- which means that when you download Node.js, yo
 
 ### Usage:
 
-~~autoprefixer-cli css/style.css~~ autoprefixer-cli seems out-of-date or deprecated
+~~autoprefixer-cli css/style.css~~ [autoprefixer-cli](https://www.npmjs.com/package/autoprefixer-cli) seems out-of-date or deprecated
 
 ~~autoprefixer-cli -h~~
 ```
