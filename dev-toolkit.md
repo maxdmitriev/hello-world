@@ -36,3 +36,19 @@ csscomb css/style.css
 
 
 
+## Command Line Aliases
+
+
+Aliases/shortcuts for Autoprefixer and CSScomb commands:
+````
+alias ap="npx postcss --use autoprefixer -r --no-map"
+
+alias comb="csscomb"
+````
+
+To be set in a file that’s read when you open Terminal:
+````
+~/.bash_profile
+````
+
+
