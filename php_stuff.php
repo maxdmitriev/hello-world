@@ -3,7 +3,7 @@
   
   /* $string = get_sub_field( 'input_label' ); */
   
-  $string = 'LA. LA       LA?|*?!<<>@+=-'
+  $string = 'LA. LA       LA?|*?!\"\'@+=-';
 
   $no_spaces_string = str_replace(' ', '_', $string);
 
