@@ -1,6 +1,6 @@
 # Javascript Sticky footer
-## Bulletproof/cross-browser (IE6+).
-## Simple and easy to implement, only require the footer tag to be presented.
+### Bulletproof/cross-browser (IE6+).
+### Simple and easy to implement, only require the footer tag to be presented.
 
 ```
 // Sticky footer
