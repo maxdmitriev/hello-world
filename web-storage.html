@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web Storage</title>
+</head>
+<body>
+
+<form action="">
+    <label for="genderMale">Male</label> <input id="genderMale" name="gender" value="male" type="radio" /><br />
+    <label for="genderFemale">Female</label> <input id="genderFemale" name="gender" value="female" type="radio" /><br />
+    <label for="settlementCity">City</label> <input id="settlementCity" name="settlement" value="city" type="checkbox" /><br />
+    <label for="settlementVillage">Village</label> <input id="settlementVillage" name="settlement" value="village" type="checkbox" /><br />
+    <label for="firstname">First Name</label> <input id="firstname" name="firstname" type="text" /><br />
+    <label for="lastname">Last Name</label> <input id="lastname" name="lastname" type="text" /><br />
+    <label for="message">Message</label> <textarea id="message" name="message"></textarea>
+</form>
+
+<div id="result"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== 'undefined') {
+
+    // radio
+    var genderMale;
+    var genderFemale;
+    
+    // checkbox
+    var settlementCity;
+    var settlementVillage;
+    
+    // input text
+    var firstname = document.getElementById('firstname');
+    var lastname = document.getElementById('lastname');
+    
+    // textarea
+    var message = document.getElementById('message');
+ 
+//------------------------------------------------------------------
+
+
+/*
+
+to trap paste operations with the mouse, use "onpaste" (IE, FF3) and "oninput" (FF, Opera, Chrome, Safari*).
+
+*Broken for <textarea> on Safari. Use textInput instead
+
+*/
+
+var textElems = [firstname, lastname, message];
+
+
+textElems.forEach(function(el) {
+ // Retrieve
+el.value = localStorage.getItem(el.id);
+    
+    // Store
+  el.addEventListener('keyup', function(e) {
+    localStorage.setItem(el.id, el.value);
+    setTimeout(clearLocalStorage, 60000 * 5); // Clear in 5 min
+  });
+});
+
+
+function clearLocalStorage() {
+    localStorage.clear();
+}
+
+
+
+    
+}
+</script>
+</body>
+</html>
