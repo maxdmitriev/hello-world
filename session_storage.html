@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Session storage</title>
+</head>
+<body>
+
+<form action="">
+    <label for="firstname">First Name</label> <input id="firstname" name="firstname" type="text" /><br />
+    <label for="lastname">Last Name</label> <input id="lastname" name="lastname" type="text" /><br />
+    <label for="message">Message</label> <textarea id="message" name="message"></textarea>
+    <label for="message2">Message 2</label> <textarea id="message2" name="message2"></textarea>
+</form>
+
+<script>
+    var form = document.querySelector('form'); // form
+    var inputText = form.querySelectorAll('input[type=text], textarea'); // all input type=text and textarea elements
+    var textElems = []; // empty array
+    var questionList = [];
+	
+	// add all input type=text and textarea to array 
+    inputText.forEach(function (el) {
+        textElems.push(el); 
+    });
+
+    textElems.forEach(function (el) {
+        // Retrieve
+        el.value = localStorage.getItem(el.id);
+        
+        // Store
+        el.addEventListener('keydown', throttle(function () {
+        
+            questionList.push({
+              "questionId": el.id,
+              "answer": el.value
+            });
+            
+            console.log(questionList);
+        }));
+    });
+    
+    // Store delay on type
+    function throttle(f, delay){
+        var timer = null;
+        return function(){
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = window.setTimeout(function(){
+                f.apply(context, args);
+            },
+            delay || 500);
+        }
+    }
+</script>
+</body>
+</html>
