@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Web Storage</title>
+    <title>Web Storage Test</title>
 </head>
 <body>
 
@@ -20,56 +20,34 @@
 
 <script>
 // Check browser support
-if (typeof(Storage) !== 'undefined') {
+if (typeof (Storage) !== 'undefined') {
+    var form = document.querySelector('form'); // form
+    var inputText = form.querySelectorAll('input[type=text]'); // all input type=text
+    var textarea = form.querySelectorAll('textarea'); // all textarea elements
+    var textElems = []; // empty array 
 
-    // radio
-    var genderMale;
-    var genderFemale;
+    inputText.forEach(function (el) {
+        textElems.push(el); // add all input type=text to array 
+    });
+
+    textarea.forEach(function (el) {
+        textElems.push(el); // add all textarea elements type=text to array 
+    });
     
-    // checkbox
-    var settlementCity;
-    var settlementVillage;
+    textElems.forEach(function (el) {
+        // Retrieve
+        el.value = localStorage.getItem(el.id);
+        
+        // Store
+        el.addEventListener('keyup', function () {
+            localStorage.setItem(el.id, el.value);
+            setTimeout(clearLocalStorage, 60000 * 3); // 60000 = 1min
+        });
+    });
     
-    // input text
-    var firstname = document.getElementById('firstname');
-    var lastname = document.getElementById('lastname');
-    
-    // textarea
-    var message = document.getElementById('message');
- 
-//------------------------------------------------------------------
-
-
-/*
-
-to trap paste operations with the mouse, use "onpaste" (IE, FF3) and "oninput" (FF, Opera, Chrome, Safari*).
-
-*Broken for <textarea> on Safari. Use textInput instead
-
-*/
-
-var textElems = [firstname, lastname, message];
-
-
-textElems.forEach(function(el) {
- // Retrieve
-el.value = localStorage.getItem(el.id);
-    
-    // Store
-  el.addEventListener('keyup', function(e) {
-    localStorage.setItem(el.id, el.value);
-    setTimeout(clearLocalStorage, 60000 * 5); // Clear in 5 min
-  });
-});
-
-
-function clearLocalStorage() {
-    localStorage.clear();
-}
-
-
-
-    
+    function clearLocalStorage() {
+        localStorage.clear();
+    }
 }
 </script>
 </body>
