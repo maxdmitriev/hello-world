@@ -18,8 +18,8 @@
     var inputText = form.querySelectorAll('input[type=text], textarea'); // all input type=text and textarea elements
     var textElems = []; // empty array
     var questionList = [];
-	
-	// add all input type=text and textarea to array 
+    
+    // add all input type=text and textarea to array 
     inputText.forEach(function (el) {
         textElems.push(el); 
     });
@@ -28,15 +28,19 @@
         // Retrieve
         el.value = localStorage.getItem(el.id);
         
-        // Store
-        el.addEventListener('keydown', throttle(function () {
         
+        // Store
+        function store() {
             questionList.push({
               "questionId": el.id,
               "answer": el.value
             });
-            
             console.log(questionList);
+        }
+        store();
+        
+        el.addEventListener('keydown', throttle(function () {
+            store();
         }));
     });
     
