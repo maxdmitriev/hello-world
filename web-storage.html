@@ -22,19 +22,14 @@
 // Check browser support
 if (typeof (Storage) !== 'undefined') {
     var form = document.querySelector('form'); // form
-    var inputText = form.querySelectorAll('input[type=text]'); // all input type=text
-    var textarea = form.querySelectorAll('textarea'); // all textarea elements
-    var textElems = []; // empty array 
+    var textElems = form.querySelectorAll('input[type=text], textarea'); // all input type=text and textarea elements
+    var textElemsGroup = []; // empty array 
 
-    inputText.forEach(function (el) {
-        textElems.push(el); // add all input type=text to array 
-    });
-
-    textarea.forEach(function (el) {
-        textElems.push(el); // add all textarea elements type=text to array 
+    textElems.forEach(function (el) {
+        textElemsGroup.push(el); // add all input type=text to array 
     });
     
-    textElems.forEach(function (el) {
+    textElemsGroup.forEach(function (el) {
         // Retrieve
         el.value = localStorage.getItem(el.id);
         
